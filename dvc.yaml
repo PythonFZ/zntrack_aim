@@ -1,0 +1,10 @@
+stages:
+  GenerateRandomNumbers:
+    cmd: zntrack run src.GenerateRandomNumbers --name GenerateRandomNumbers
+    metrics:
+    - nodes/GenerateRandomNumbers/node-meta.json:
+        cache: false
+    outs:
+    - nodes/GenerateRandomNumbers/numbers.json
+    params:
+    - GenerateRandomNumbers

@@ -1,0 +1,17 @@
+schema: '2.0'
+stages:
+  GenerateRandomNumbers:
+    cmd: zntrack run src.GenerateRandomNumbers --name GenerateRandomNumbers
+    params:
+      params.yaml:
+        GenerateRandomNumbers:
+          seed: 42
+    outs:
+    - path: nodes/GenerateRandomNumbers/node-meta.json
+      hash: md5
+      md5: 05ec52924fb43ad4fe1df9942341ec41
+      size: 64
+    - path: nodes/GenerateRandomNumbers/numbers.json
+      hash: md5
+      md5: a3143477c8d6f4be002c16340aa36092
+      size: 10880

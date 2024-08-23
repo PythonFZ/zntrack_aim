@@ -1,0 +1,9 @@
+{
+    "GenerateRandomNumbers": {
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/GenerateRandomNumbers"
+        },
+        "name": "GenerateRandomNumbers"
+    }
+}
